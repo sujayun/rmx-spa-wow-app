@@ -12,6 +12,7 @@ export default defineConfig({
   plugins: [
     remix({
       ssr: false,
+      buildDirectory: "build",
       future: {
         v3_fetcherPersist: true,
         v3_relativeSplatPath: true,
@@ -21,5 +22,5 @@ export default defineConfig({
       },
     }),
     tsconfigPaths(),
-  ],
+  ]
 });
